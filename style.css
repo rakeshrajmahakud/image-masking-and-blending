@@ -1,0 +1,21 @@
+.bg_image{
+    width: 100%;
+    height: 100vh;
+    background: url('./bg.jpg');
+    background-size: cover;
+    position: relative;
+
+}
+
+.bg_image:before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./splash.jpg');
+    background-size:100% ;
+    background-position: center;
+    mix-blend-mode: screen;
+}
